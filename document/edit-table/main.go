@@ -106,9 +106,9 @@ func main() {
 	for _, t := range tables {
 		tp := t.Properties()
 	        fmt.Printf("%+v\n", tp.X())
-	        fmt.Printf("%+v\n", tp.X().TblW)
-	        fmt.Printf("%+v\n", tp.X().Jc)
-	        fmt.Printf("%+v\n", tp.X().TblInd)
+	        //fmt.Printf("%s\n", *tp.X().TblCaption)
+	        fmt.Printf("%s\n", *tp.X().TblCaption)
+		fmt.Printf("%s\n", *tp.X().TblDescription)
 		for _, row := range t.Rows() {
 		//for _, _ = range t.Rows() {
 	          fmt.Println("row")
